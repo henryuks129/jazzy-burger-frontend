@@ -1,0 +1,65 @@
+.footer-background{
+    background-color: black;
+    /* width: 1452px; */
+    /* height: 453px; */
+}
+
+.support-main{
+    width: 147.13px;
+    height: 68.42px;
+}
+
+.apple-frame{
+    width: 211px;
+    height: 55px; 
+}
+
+.google-frame{
+    width: 211px;
+    height: 55px;
+}
+
+.youtube-icon{
+    padding-bottom: 3px;
+}
+
+@media (max-width: 575px) {
+    .footer-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-body{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .frames-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-support{
+        /* width: 77.91px; */
+        height: 55.68px;
+    }
+
+    .payment-secure{
+        /* width: 77.64px; */
+        height: 68.42px;
+    }
+}

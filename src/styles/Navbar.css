@@ -1,0 +1,101 @@
+.nav-body{
+    height: 98px;
+    /* left: 103px; */
+}
+
+/* images styles */
+
+/* logo section */
+.nav-jazzylogo{
+    background-image: url('../assests/jazzyLogo.svg');
+    width: 90px;
+    height: 95.77px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* location-section */
+.nav-location{
+    /* width: 23; */
+    height: 28.75;
+}
+
+/* nav products section */
+.nav-products-section{
+    /* width: 164px; */
+    height: 32px;
+}
+
+.nav-products{
+    width: 42.67px;
+    height: 32px;
+}
+
+/* nav-person section */
+.nav-person{
+    width: 29px;
+    height: 31.07px;
+}
+
+.nav-dropdown{
+    width: 22.57px;
+    height: 7.41;
+}
+
+.nav-person-section{
+    /* width: 160.48px; */
+    height: 33px;
+}
+
+/* cart-section */
+.nav-carticon{
+    width: 33.24px;
+    height: 34.25;
+}
+
+/* nav texts styles */
+
+.nav-logo-text{
+    width: 164px;
+    height: 33px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #F31D1D;
+}
+
+.nav-allproducts-text{
+    width: 104px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    /* line-height: inherit; */
+    color: #F31D1D;
+    margin-top: 3px;
+}
+
+.nav-person-text{
+    width: 86px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0,47);
+}
+
+@media  (max-width: 575px) {
+    .nav-person-section{
+        flex-direction: column-reverse;
+    }
+    
+    /* .location-nav{
+        display: none;
+    }
+
+    .all-product-div{
+        display: none;
+    }
+
+    .guest-div{
+        display: none;
+    } */
+}
