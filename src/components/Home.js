@@ -54,16 +54,16 @@ const Home = () => {
       </div>
       <div className='row mt-5'>
         <div className='col-lg-4 home-jazzy-image d-none d-md-block'>  
-          <img src={jazzyimage} alt="" className='jazzy-image '/>
+          <img src={jazzyimage} alt="" className='jazzy-image img-fluid'/>
         </div>
-        <div className='col-lg-8 home-burger-container gap-4'>
+        <div className='col-lg-8 home-burger-container '>
           {data.map((datum)=>{
-            let {_id,title,description,category,price,image} = datum;
+            const {_id,title,description,category,price,image} = datum;
             return(
                 <div key={_id} id="id" className='home-fetched-data'>
                 <Link to={`/singleBurger/${_id}`} className='text-decoration-none' >
                   <div className='home-fetched-image'>
-                  <img id='image' src={image} alt={title} className='fetched-image w-100' />
+                  <img id='image' src={image} alt={title} className='fetched-image w-100 img-fluid' />
                   </div>
                   <h6> {title} </h6>
                   <p>Total Price</p>
@@ -71,12 +71,12 @@ const Home = () => {
                     <img src={nairasign} alt="" />
                     <h5> {price} </h5>
                   </div>
-                  <div className='d-inline-flex gap-2 '>
-                    <img src={cheese} alt="" />
-                    <img src={onions} alt="" />
-                    <img src={lettuce} alt="" />
-                    <img src={buns} alt="" />
-                    <img src={egg} alt="" />
+                  <div className='d-inline-flex gap'>
+                    <img src={cheese} alt="" className='img-fluid food-item-image'/>
+                    <img src={onions} alt="" className='img-fluid food-item-image'/>
+                    <img src={lettuce} alt="" className='img-fluid food-item-image'/>
+                    <img src={buns} alt="" className='img-fluid food-item-image'/>
+                    <img src={egg} alt="" className='img-fluid food-item-image'/>
                   </div>
                 </Link>
                 <div className='heart-body'>
@@ -84,10 +84,12 @@ const Home = () => {
                   <img src={heartcircle} alt="" className='heart-circle'/>
                   {/* <img src={redhearticon} alt="" className='red-heart-icon'/> */}
                 </div>
+                <div className='home-button'>
                 <button className='btn btn-danger add-button'>
                   <img src={addtocart} alt="" />
                   Add to Cart
                 </button>
+                </div>
               </div>
             )
           })}

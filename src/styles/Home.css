@@ -23,14 +23,60 @@
 .home-burger-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* gap: 10px; */
+    /* grid-column-gap: 10px; */
+
+    gap: 10px;
     /* width: 370px; */
 }
 
 @media screen and (max-width: 575px) {
 .home-burger-container {
     grid-template-columns: 1fr;
+    
 }
+
+.home-fetched-data{
+    width: 350px;
+    margin: auto;
+    /* height: 490px; */
+    /* margin: auto; */
+}
+
+.fetched-image{
+    /* width: 334px; */
+    /* height: 248px; */
+}
+}
+
+@media screen and (max-width: 768px) {
+    .home-fetched-data{
+        /* width: 150px; */
+    }
+    .jazzy-image{
+        /* width: 120px; */
+    }
+    .home-burger-container{
+        /* width: 200px; */
+    }
+    .home-jazzy-image{
+        width: 200px;
+    }
+    .food-images{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-fetched-data{
+        width: 200px;
+    }
+    .food-item-image{
+        width: 42px;
+    }
+    .add-button{
+        width: 188px;
+        margin: auto;
+    }
 }
 
 .to-top-image{
@@ -71,8 +117,8 @@
 .add-button{
     width: 224.87px;
     /* height: 43px; */
-    top: 440px;
-    left: 550px;
+    /* top: 440px; */
+    /* left: 550px; */
     background: #F31D1D;
     border-radius: 10px;
 }
