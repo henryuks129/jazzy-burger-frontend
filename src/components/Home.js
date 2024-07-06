@@ -61,15 +61,15 @@ const Home = () => {
             const {_id,title,description,category,price,image} = datum;
             return(
                 <div key={_id} id="id" className='home-fetched-data'>
-                <Link to={`/singleBurger/${_id}`} className='text-decoration-none' >
+                <Link to={`/singleBurger/${_id}`} className='text-decoration-none home-container' >
                   <div className='home-fetched-image'>
                   <img id='image' src={image} alt={title} className='fetched-image w-100 img-fluid' />
                   </div>
-                  <h6> {title} </h6>
-                  <p>Total Price</p>
+                  <h6 class="text-dark"> {title} </h6>
+                  <p class="text-dark">Total Price</p>
                   <div className='d-inline-flex gap-2'>
                     <img src={nairasign} alt="" />
-                    <h5> {price} </h5>
+                    <h5 class="text-dark pt-2"> {price} </h5>
                   </div>
                   <div className='d-inline-flex gap'>
                     <img src={cheese} alt="" className='img-fluid food-item-image'/>
@@ -78,15 +78,17 @@ const Home = () => {
                     <img src={buns} alt="" className='img-fluid food-item-image'/>
                     <img src={egg} alt="" className='img-fluid food-item-image'/>
                   </div>
-                </Link>
-                <div className='heart-body'>
+                {/* <div className='heart-body'>
+                <div className="heart-container">
                   <img onClick={clickbutton} src={clickimage ? redhearticon : hearticon} alt="" className='heart-icon'/>
                   <img src={heartcircle} alt="" className='heart-circle'/>
                   {/* <img src={redhearticon} alt="" className='red-heart-icon'/> */}
-                </div>
+                {/* </div> */}
+                {/* </div>  */}
+                </Link>
                 <div className='home-button'>
                 <button className='btn btn-danger add-button'>
-                  <img src={addtocart} alt="" />
+                  <img src={addtocart} alt="" className="mx-2"/>
                   Add to Cart
                 </button>
                 </div>

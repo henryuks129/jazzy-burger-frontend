@@ -124,9 +124,13 @@
 }
 
 /* like button */
+.heart-container{
+    position: relative;
+}
 
 .heart-body{
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 .heart-icon{
@@ -138,15 +142,21 @@
 
 .heart-circle{
     position: absolute;
-    bottom: 22.8rem;
-    right: 0.4rem;
+    /* bottom: 22.8rem; */
+    /* right: 0.4rem; */
+    top: 0;
+    right: 0;
     z-index: 1;
     /* background-color: blue; */
 }
 
-.red-heart-icon{
-
+.home-container{
+    position: relative;
 }
+
+/* .red-heart-icon{
+
+} */
 
 /* @media screen and (max-width: 575px) {
     .home-background-image{
